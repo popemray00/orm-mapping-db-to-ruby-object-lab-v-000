@@ -22,11 +22,10 @@ class Student
 
   def self.find_by_name(name)
     sql = <<-SQL
-    SELECT *
-    FROM student
-    WHERE name = ?
-    LIMIT 1
-
+      SELECT *
+      FROM student
+      WHERE name = ?
+      LIMIT 1
     SQL
   end
 
