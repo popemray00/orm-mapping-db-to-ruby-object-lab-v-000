@@ -71,13 +71,13 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE name = ?
+      WHERE grade = 10
       LIMIT 1
     SQL
 
     DB[:conn].execute(sql).first
-    
-    
+
+
   end
 
   def save
