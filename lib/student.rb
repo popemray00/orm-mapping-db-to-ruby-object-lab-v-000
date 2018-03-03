@@ -38,6 +38,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 9
+      LIMIT 1
     SQL
   end
 
